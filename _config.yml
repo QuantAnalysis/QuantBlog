@@ -54,33 +54,3 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-================================================================================
-DETAILED MULTI-HORIZON ANALYSIS
-================================================================================
-
-📊 1 WEEK PREDICTION:
-   Target Price: $182.51
-   Expected Change: +0.3% ($+0.49)
-   95% Confidence Range: $179.83 - $185.18
-   Prediction Error: ±$1.37
-   Trading Days: 5
-   Risk Level: 🟢 LOW RISK (0.8% error margin)
-
-📊 2 WEEKS PREDICTION:
-   Target Price: $183.61
-   Expected Change: +0.9% ($+1.59)
-   95% Confidence Range: $179.78 - $187.43
-   Prediction Error: ±$1.95
-   Trading Days: 10
-   Risk Level: 🟢 LOW RISK (1.1% error margin)
-
-📊 1 MONTH PREDICTION:
-   Target Price: $186.64
-   Expected Change: +2.5% ($+4.62)
-   95% Confidence Range: $180.84 - $192.44
-...
-• Model shows consistent bullish sentiment across most time horizons
-• Potential for significant upside: up to +75.0%
-
-⚠️  Remember: These are model predictions with inherent uncertainty. Use as part of broader analysis.
-Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
