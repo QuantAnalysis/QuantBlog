@@ -9,6 +9,207 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 Jekyll requires blog post files to be named according to the following format:
 
 `2025-08-15-title.MARKUP`
+🚨 STOCK ANALYSIS NOTEBOOK - EXECUTION ORDER IMPORTANT
+📊 Currently configured for: NVDA
+============================================================
+⚠️ This notebook must be run in sequential order (Cell 1 → Cell 2 → Cell 3...)
+⚠️ Each cell depends on variables defined in previous cells
+⚠️ If you get 'name not defined' errors, restart kernel and run all cells in order
+
+📋 QUICK TROUBLESHOOTING:
+1. If you see 'stock_data is not defined' → Run the data fetching cell first
+2. If charts don't display → Check font setup in the imports cell
+3. If predictions fail → Ensure ML features are created first
+
+🆘 EMERGENCY FIX AVAILABLE:
+• Cell 4 contains emergency data loading if stock_data is missing
+• This will automatically fetch stock data if not already loaded
+• However, proper order execution is still recommended
+
+✅ BEST PRACTICE: Cell → Run All (runs everything in correct order)
+✅ QUICK FIX: Run Cell 4 first if you get NameError
+============================================================
+
+🚀 STARTING NVDA DATA FETCHING...
+==================================================
+📡 Connecting to NVDA ticker...
+📅 Fetching NVDA data from 2020-08-16 to 2025-08-15
+📊 Data period: 5 years (1825 days)
+⏳ Downloading historical data...
+✅ NVDA Data Successfully Loaded!
+✅ Data shape: (1255, 7)
+✅ Date range: 2020-08-17 to 2025-08-14
+✅ Total trading days: 1,255
+
+📋 Fetching company information...
+✅ Company info loaded: NVIDIA Corporation
+
+🎉 ALL NVDA DATA SUCCESSFULLY LOADED!
+Variables defined: stock_ticker, stock_data, stock_info
+Data shape: (1255, 7)
+Date range: 2020-08-17 to 2025-08-14
+Total trading days: 1255
+Years of data: 5.0 years
+
+Fetching company information...
+
+📊 DATA SUMMARY:
+• Latest close price: $182.02
+✅ Ready for analysis!
+
+
+📊 5-YEAR NVDA ANALYSIS - ENHANCED INSIGHTS
+============================================================
+✅ DATASET OVERVIEW:
+• Actual data span: 5.0 years
+• Trading days: 1,255
+• Average trading days per year: 251
+
+📈 5-YEAR PERFORMANCE METRICS:
+• Total Return: +1380.3%
+• Annualized Return: +71.6%
+• Annualized Volatility: 52.7%
+• Maximum Drawdown: -66.3%
+• Sharpe Ratio (approx): 1.36
+
+💰 PRICE ANALYSIS:
+• All-time high (5Y): $184.48
+• All-time low (5Y): $10.80
+• Price range: $173.68
+• Current price: $182.02
+• Distance from 5Y high: -1.3%
+• Distance from 5Y low: 1585.3%
+
+🔄 MARKET CYCLES CAPTURED:
+• 2020: +5.9%
+• 2021: +124.5%
+• 2022: -51.4%
+• 2023: +246.1%
+• 2024: +178.9%
+• 2025: +31.6%
+
+🎯 ADVANTAGES OF 5-YEAR ANALYSIS:
+• Captures multiple market cycles and economic conditions
+• Includes various market regimes (bull, bear, sideways)
+• Provides robust statistical foundation for ML models
+• Enables long-term trend and seasonality analysis
+• Reduces impact of short-term market noise
+• Large sample size (1,255 observations) improves model reliability
+✅ Excellent: Full 5-year dataset available for comprehensive analysis
+
+============================================================
+📈 FETCHING HISTORICAL EARNINGS DATA
+==================================================
+✅ Earnings data fetched successfully!
+⚠️ Could not fetch detailed earnings data: 'NoneType' object has no attribute 'empty'
+Using alternative financial data...
+
+📊 FINANCIAL METRICS:
+EPS (TTM): 3.09
+Forward EPS: 4.12
+EPS Growth: 26.7%
+Revenue (TTM): 148514996224
+Revenue Growth: 69.2%
+Profit Margin: 51.7%
+Operating Margin: 49.1%
+
+📅 Next earnings date not available through API
+
+==================================================
+
+🔮 GENERATING MULTI-HORIZON PRICE PREDICTIONS...
+============================================================
+Generating multi-horizon predictions with improved methodology...
+Current price: $182.02
+Daily volatility: 3.32%
+Recent 20-day trend: 0.272% per day
+
+Processing 1 Week (5 days)...
+  Trend method: $184.51
+  Drift method: $184.49
+  ML method: $179.52
+  Final prediction: $182.51 (+0.3%)
+
+Processing 2 Weeks (10 days)...
+  Trend method: $187.02
+  Drift method: $186.99
+  ML method: $178.50
+  Final prediction: $183.61 (+0.9%)
+
+Processing 1 Month (22 days)...
+  Trend method: $193.21
+  Drift method: $193.13
+  ML method: $176.82
+  Final prediction: $186.64 (+2.5%)
+
+Processing 2 Months (44 days)...
+  Trend method: $205.09
+  Drift method: $204.92
+  ML method: $174.71
+  Final prediction: $195.91 (+7.6%)
+
+Processing 3 Months (66 days)...
+  Trend method: $217.70
+  Drift method: $217.44
+  ML method: $173.11
+  Final prediction: $204.22 (+12.2%)
+
+Processing 6 Months (132 days)...
+  Trend method: $260.37
+  Drift method: $259.74
+  ML method: $167.77
+  Final prediction: $232.34 (+27.6%)
+
+Processing 9 Months (198 days)...
+  Trend method: $311.41
+  Drift method: $310.28
+  ML method: $161.06
+  Final prediction: $280.66 (+54.2%)
+
+Processing 1 Year (252 days)...
+  Trend method: $360.52
+  Drift method: $358.86
+  ML method: $155.78
+  Final prediction: $318.58 (+75.0%)
+
+📊 MULTI-HORIZON PRICE PREDICTIONS SUMMARY:
+================================================================================
+Time Horizon  Trading Days Current Price Predicted Price Price Change Change % Prediction Error (±) 95% Confidence Range
+      1 Week             5       $182.02         $182.51        $0.49    +0.3%                $1.37    $179.83 - $185.18
+     2 Weeks            10       $182.02         $183.61        $1.59    +0.9%                $1.95    $179.78 - $187.43
+     1 Month            22       $182.02         $186.64        $4.62    +2.5%                $2.96    $180.84 - $192.44
+    2 Months            44       $182.02         $195.91       $13.89    +7.6%                $4.36    $187.36 - $204.46
+    3 Months            66       $182.02         $204.22       $22.20   +12.2%                $5.56    $193.33 - $215.11
+    6 Months           132       $182.02         $232.34       $50.32   +27.6%                $8.77    $215.16 - $249.52
+    9 Months           198       $182.02         $280.66       $98.64   +54.2%               $11.85    $257.43 - $303.89
+      1 Year           252       $182.02         $318.58      $136.56   +75.0%               $14.40    $290.36 - $346.80
+
+🎯 MODEL PERFORMANCE CONTEXT:
+Best Model: Lasso Regression
+Historical Accuracy (R²): 0.953
+Historical RMSE: $5.04
+Daily Volatility: 3.32%
+
+📈 TREND ANALYSIS:
+Short-term (1 Week): NEUTRAL (+0.3%)
+Long-term (1 Year): BULLISH (+75.0%)
+
+📋 PREDICTION METHODOLOGY:
+• Combines trend analysis, statistical drift, and ML predictions
+• Uses weighted averaging based on time horizon
+• Applies decay factors to prevent unrealistic long-term extrapolation
+• Incorporates model uncertainty and historical volatility
+
+⚠️  IMPORTANT DISCLAIMERS:
+• Predictions become less reliable over longer time horizons
+• Model trained on historical data may not capture future market changes
+• Consider prediction errors and confidence intervals when making decisions
+• These predictions should not be used as sole investment advice
+• Results are for educational/analytical purposes only
+
+
+
+
 
 ================================================================================
 DETAILED MULTI-HORIZON ANALYSIS
